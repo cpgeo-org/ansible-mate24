@@ -1,0 +1,25 @@
+---
+- name: Instalar JDK 19
+  ansible.builtin.apt:
+    deb: https://download.oracle.com/java/19/latest/jdk-19_linux-x64_bin.deb
+
+- name: Update alternatives java
+  community.general.alternatives:
+    link: /usr/bin/java
+    name: java
+    path: /usr/lib/jvm/jdk-19/bin/java
+    priority: 1900
+
+- name: Update alternatives javac
+  community.general.alternatives:
+    link: /usr/bin/javac
+    name: javac
+    path: /usr/lib/jvm/jdk-19/bin/javac
+    priority: 1900
+
+- name: Update alternatives jar
+  community.general.alternatives:
+    link: /usr/bin/jar
+    name: jar
+    path: /usr/lib/jvm/jdk-19/bin/jar
+    priority: 1900

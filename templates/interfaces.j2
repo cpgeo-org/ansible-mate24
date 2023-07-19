@@ -1,0 +1,12 @@
+auto lo
+iface lo inet loopback
+
+auto {{ network_interface }}
+  iface {{ network_interface }} inet static
+  address {{ ip_address }}
+  gateway 192.168.0.36
+  netmask 255.255.255.0
+  network 192.168.0.0
+  broadcast 192.168.0.255
+  dns-domain cpgeo cpgeo.com
+  dns-nameservers 192.168.0.120 8.8.8.8

@@ -1,0 +1,6 @@
+nis        -nosuid    192.168.0.100:/vol1/nis
+ftp        -nosuid    pod1:/disco2/ftp
+# Backups
+# -------
+nis_bkp    -nosuid    192.168.0.86:/vol1/backup/dia.0/db_nis/vol1/nis
+ftp_bkp    -nosuid    pod2:/disco2/ftp/dia.0

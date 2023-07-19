@@ -1,0 +1,6 @@
+---
+- import_playbook: rede.yml
+- import_playbook: cliente_nfs.yml
+- import_playbook: cliente_nis.yml
+- import_playbook: pacotes_apt.yml
+- import_playbook: lightdm_mate.yml

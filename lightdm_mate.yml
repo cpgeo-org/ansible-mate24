@@ -1,0 +1,10 @@
+---
+- name: Permitir login manual na tela de login LightDM
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: Editar arquivo de configuração /etc/lightdm/lightdm.conf.d/91-arctica-greeter-mate.conf
+    ansible.builtin.copy:
+      src: files/91-arctica-greeter-mate.conf
+      dest: /etc/lightdm/lightdm.conf.d/91-arctica-greeter-mate.conf
