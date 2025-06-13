@@ -11,16 +11,21 @@
       ansible.builtin.apt:
         name:
           - build-essential
+          - cmake
           - curl
-          - exa
+          - default-jdk
+          - default-jdk-doc
           - fzf
           - gedit
           - gnumeric
           - htop
-          - nscd
           - neovim
+          - nscd
           - openssh-client
           - openssh-server
+          - pkg-config
+          - parallel
+          - pipx
           - ssh
           - tmux
           - xterm

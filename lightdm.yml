@@ -2,9 +2,8 @@
 - name: Permitir login manual na tela de login LightDM
   hosts: localhost
   connection: local
-  become: yes
   tasks:
-  - name: Copiar arquivo de configuração adicional para /etc/lightdm/lighdm.conf.d/
-    ansible.builtin.copy:
-      src: files/50-myconfig.conf
-      dest: /etc/lightdm/lightdm.conf.d/50-myconfig.conf
+    - name: Copiar arquivo de configuração adicional para /etc/lightdm/lighdm.conf.d/
+      ansible.builtin.copy:
+        src: files/50-myconfig.conf
+        dest: /etc/lightdm/lightdm.conf.d/50-myconfig.conf

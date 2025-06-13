@@ -1,38 +1,58 @@
-1     -nosuid    sm2:/disco1/database1
-2     -nosuid    filer7:/disco2/cpgeo_database2
-3     -nosuid    filer7:/disco2/cpgeo_database3
-4     -nosuid    sm2:/disco1/database4
-#5
-6     -nosuid    cpgeo46:/disco/database6
-7     -nosuid    filer7:/disco1/cpgeo_database7
-8     -nosuid    filer7:/disco2/cpgeo_database8
-9     -nosuid    sm1:/disco1/cpgeo_database9
-10    -nosuid    sm1:/disco2/cpgeo_database10
-11    -nosuid    sm2:/disco2/database11
-#12
-13    -nosuid    filer4:/volume1/database13
-14    -nosuid    pod1:/disco1/db14/database14
-15    -nosuid    filer5:/volume1/database15
-16    -nosuid    pod1:/disco1/lvm1
-17    -nosuid    pod2:/disco1/db17
-18    -nosuid    pod1:/disco2/db18
-19    -nosuid    pod1:/disco3/database19
-20    -nosuid    pod2:/disco3/db20
-21    -nosuid    sm2:/disco2/database21
-22    -nosuid    sm1:/disco2/database22
+1          -nosuid    filer7:/disco2/database1
+2          -nosuid    filer7:/disco2/database2
+#3 — descontinuado
+4          -nosuid    filer6:/disco1/database4
+#5 — descontinuado
+6          -nosuid    cpgeo46:/disco/database6
+7          -nosuid    filer7:/disco1/cpgeo_database7
+8          -nosuid    filer7:/disco2/database8
+9          -nosuid    sm1:/disco1/cpgeo_database9
+#10 — descontinuado
+#11 — descontinuado
+#12 — descontinuado
+#13 — descontinuado
+14         -nosuid    filer7:/disco1/database14
+#15 — descontinuado
+16         -nosuid    pod1:/disco1/db16
+17         -nosuid    pod2:/disco1/db17
+18         -nosuid    pod1:/disco2/db18
+19         -nosuid    pod1:/disco3/db19
+20         -nosuid    pod2:/disco3/db20
+21         -nosuid    sm2:/disco2/database21
+22         -nosuid    sm1:/disco2/database22
+23         -nosuid    sm1:/disco1/database23
+24         -nosuid    sm2:/disco2/database24
+25         -nosuid    pod2:/disco1/db25
+disco61    -nosuid    cpgeo61:/disco61
+disco64    -nosuid    cpgeo64:/disco64
+nvme       -nosuid    192.168.0.81:/mnt/pool1
 # Backups
 # -------
-#1_bkp     -nosuid    filer3:/volume1/dia.0/database1/dados/sm2disco1/database4/cpgeo_database
-#4_bkp     -nosuid    filer3:/volume1/dia.0/database4/dados/sm2disco1/database4/cpgeo_database4
-#6_bkp     -nosuid    cpgeo43:/backups/backup_database6/dia.0
-#11_bkp    -nosuid    filer2:/backups/dia.0/database11/disco1/cpgeo_database11
-#13_bkp    -nosuid    cpgeo35:/backups/backup_database13/dia.0
-#14_bkp    -nosuid    filer6:/disco2_backup_database14/dia.0
-#15_bkp    -nosuid    cpgeo27/volume1/backup_database15/dia.0
-#16_bkp    -nosuid    pod2:/disco1/lvm1/dia.0
-#17_bkp    -nosuid    pod1:/disco1/db17/dia.0
-#18_bkp    -nosuid    pod2:/disco2/db18/dia.0
-#19_bkp    -nosuid    pod2:/disco3/bkp_db19/dia.0
-#20_bkp    -nosuid    pod1:/disco3/backup_database20/dia.0
-#21_bkp    -nosuid    filer6:/disco2/backup_database21
-#22_bkp    -nosuid    sm2:/disco1/backup_database22/dia.0
+1_bkp        -nosuid,ro  filer3:/volume1/backup_database1
+2_bkp        -nosuid,ro  filer3:/volume1/backup_database2
+#3
+4_bkp        -nosuid,ro  filer3:/volume1/backup_database4
+#5
+6_bkp        -nosuid,ro  cpgeo43:/backups/backup_database6
+7_bkp        -nosuid,ro  filer6:/disco1/backup_database7
+8_bkp        -nosuid,ro  cpgeo6:/backups/backup_database8
+9_bkp        -nosuid,ro  cpgeo84:/volume1/backup_database9
+#10
+#11
+#12
+#13
+14_bkp       -nosuid,ro  filer6:/disco2_backup_database14
+#15
+
+17_bkp       -nosuid,ro  pod1:/disco1/bkp_db17
+18_bkp       -nosuid,ro  pod2:/disco2/db18
+19_bkp       -nosuid,ro  pod2:/disco3/bkp_db19
+20_bkp       -nosuid,ro  pod1:/disco3/bkp_db20
+21_bkp       -nosuid,ro  filer6:/disco2_backup_database21
+22_bkp       -nosuid,ro  sm2:/disco1/backup_database22
+23_bkp       -nosuid,ro  pod1:/disco1/bkp_db23
+24_bkp       -nosuid,ro  filer4:/volume1/backup_database24
+25_bkp       -nosuid,ro  pod1:/disco2/bkp_db25
+disco61_bkp  -nosuid,ro  pod2:/disco2/bkp_disco61
+disco64_bkp  -nosuid,ro  pod2:/disco2/bkp_disco64
+nvme_bkp     -nosuid,ro  filer3:/volume1/backup_database_nvme
