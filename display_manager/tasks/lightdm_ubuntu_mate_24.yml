@@ -1,0 +1,16 @@
+---
+- name: Editar arquivo de configuração /etc/lightdm/lightdm.conf.d/91-arctica-greeter-guest-session.conf
+  ansible.builtin.copy:
+    src: display_manager/files/91-arctica-greeter-guest-session.conf
+    dest: /etc/lightdm/lightdm.conf.d/91-arctica-greeter-guest-session.conf
+    mode: "0644"
+
+- name: Editar arquivo de configuração /etc/lightdm/lightdm.conf.d/91-arctica-greeter-mate.conf
+  ansible.builtin.copy:
+    src: display_manager/files/91-arctica-greeter-mate.conf
+    dest: /etc/lightdm/lightdm.conf.d/91-arctica-greeter-mate.conf
+    mode: "0644"
+
+# Referências
+# - https://ubuntu-mate.community/t/guest-session-on-by-default/26471
+# - https://ubuntu-mate.community/t/disable-guest-account-in-ubuntu-mate-22-04/25361
