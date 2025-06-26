@@ -58,7 +58,7 @@
     force: true
 
 - name: Recarregar e ativar serviço autofs
-  ansible.builtin.systemd:
+  ansible.builtin.systemd_service:
     name: autofs
     state: reloaded
     enabled: true
