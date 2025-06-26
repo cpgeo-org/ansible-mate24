@@ -43,7 +43,7 @@ nvme       -nosuid    192.168.0.81:/mnt/pool1
 #13
 14_bkp       -nosuid,ro  filer6:/disco2_backup_database14
 #15
-
+16_bkp       -nosuid,ro  pod2:/disco1/bkp_db16
 17_bkp       -nosuid,ro  pod1:/disco1/bkp_db17
 18_bkp       -nosuid,ro  pod2:/disco2/db18
 19_bkp       -nosuid,ro  pod2:/disco3/bkp_db19

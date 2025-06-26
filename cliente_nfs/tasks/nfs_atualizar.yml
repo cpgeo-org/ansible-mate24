@@ -1,33 +1,33 @@
 ---
 - name: Copiar arquivo de configuração /etc/master
   ansible.builtin.copy:
-    src: files/auto.master
+    src: cliente_nfs/files/auto.master
     dest: /etc/auto.master
-    mode: 0644
+    mode: "0644"
 
 - name: Copiar arquivo de configuração /etc/auto.cpgeo_database
   ansible.builtin.copy:
-    src: files/auto.cpgeo_database
+    src: cliente_nfs/files/auto.cpgeo_database
     dest: /etc/auto.cpgeo_database
-    mode: 0644
+    mode: "0644"
 
 - name: Copiar arquivo de configuração /etc/auto.dados
   ansible.builtin.copy:
-    src: files/auto.dados
+    src: cliente_nfs/files/auto.dados
     dest: /etc/auto.dados
-    mode: 0644
+    mode: "0644"
 
 - name: Criar diretório /cpgeo_database para ponto de montagem
   ansible.builtin.file:
     path: /cpgeo_database
     state: directory
-    mode: 0755
+    mode: "0755"
 
 - name: Criar diretório /dados para ponto de montagem
   ansible.builtin.file:
     path: /dados
     state: directory
-    mode: 0755
+    mode: "0755"
 
 - name: Criar link simbólico /ftp apontando para /dados/ftp
   ansible.builtin.file:

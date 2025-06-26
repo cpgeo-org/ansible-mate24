@@ -5,8 +5,8 @@
   tasks:
     - name: Instalar NFS (importar tasks)
       ansible.builtin.import_tasks:
-        file: tasks/nfs_instalar.yml
+        file: cliente_nfs/tasks/nfs_instalar.yml
 
     - name: Configurar NFS (importar tasks)
       ansible.builtin.import_tasks:
-        file: tasks/nfs_atualizar.yml
+        file: cliente_nfs/tasks/nfs_atualizar.yml
